@@ -1,0 +1,129 @@
+#include<iostream.h>
+#include<conio.h>
+#include<stdio.h>
+ class family
+{
+public:
+ int age,son;
+ char name[120],wife[120],gender[12],jobname[123];
+
+public:
+void sample()
+{
+cout<<"\n enter the name \t:" ;
+gets(name);
+cout<<"\n enter the wife name \t:";
+gets(wife);
+cout<<"\n enter the gender \t:";
+cin>>gender;
+cout<<"\n enter the age   \t:";
+cin>>age;
+cout<<"\n enter the no.of sons \t:";
+cin>>son;
+cout<<"\n enter the jobname \t:";
+cin>>jobname;
+}
+void display()
+{
+cout<<"\n name    \t:"<<name;
+cout<<"\n wife    \t:"<<wife;
+cout<<"\n gender  \t:"<<gender;
+cout<<"\n age     \t:"<<age;
+cout<<"\n son     \t:"<<son;
+cout<<"\n jobname \t:"<<jobname;
+}
+};
+class firstson:public family
+{
+public:
+long int sal;
+char comp[34];
+public:
+void sample1()
+{
+cout<<"\n   \t";
+cout<<"\n  --------------------------------- \t ";
+cout<<"DETAILS OF THE FIRST SON";
+sample();
+cout<<"\n enter the company name \t:";
+gets(comp);
+cout<<"\n enter the salary \t:";
+cin>>sal;
+ }
+ void display1()
+ {
+ display();
+ cout<<"\n company name \t :"<<comp;
+ cout<<"\n salary \t :"<<sal;
+ }
+ };
+
+ class secondson:public family
+
+{
+public:
+
+long int sal;
+char comp[34];
+public:
+void sample2()
+{
+cout<<"\n   \t";
+cout<<"\n  --------------------------------- \t ";
+cout<<"DETAILS OF THE SECOND SON";
+sample();
+cout<<"\n enter the company name \t:";
+gets(comp);
+cout<<"\n enter the salary \t:";
+cin>>sal;
+ }
+ void display2()
+ {
+ display();
+ cout<<"\n company name \t :"<<comp;
+ cout<<"\n salary \t :"<<sal;
+ }
+ };
+ class thirdson:public family
+{
+public:
+long int sal;
+char comp[34];
+public:
+void sample3()
+{
+cout<<"\n   \t";
+cout<<"\n  --------------------------------- \t ";
+cot<<"DETAILS OF THE THIRD SON";
+sample();
+cout<<"\n enter the company name \t:";
+gets(comp);
+cout<<"\n enter the salary \t:";
+cin>>sal;
+ }
+ void display3()
+ {
+ display();
+ cout<<"\n company name \t :"<<comp;
+ cout<<"\n salary \t :"<<sal;
+ }
+ };
+void main()
+{
+clrscr();
+cout<<"\n \t \n";
+cout<<" \t OUR FAMILY DETAILS \t";
+family a;
+firstson f;
+secondson s;
+thirdson t;
+a.sample();
+a.display();
+f.sample1();
+f.display1();
+s.sample2();
+s.display2();
+t.sample2();
+t.display2();
+getch();
+}
