@@ -1,0 +1,26 @@
+import java.util.Scanner;
+public class name
+{
+public static void main(String[] args)
+{
+
+Scanner ill=new Scanner(System.in);
+int n,i,j=1;
+System.out.println("enter the value of a: ");
+n=ill.nextInt();
+j=n;
+for(i=1;i<=n/2+1;i++)
+{
+if(i<j)
+{
+System.out.println(j);
+System.out.println(i);
+j--;
+}
+else 
+{
+System.out.println(n/2+1);
+}
+}
+} 
+}
