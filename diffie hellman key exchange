@@ -1,0 +1,47 @@
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+import java.math.*;
+class Ideone
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		Scanner s=new Scanner(System.in);
+		System.out.print("enter the prime value : ");
+		BigInteger a=s.nextBigInteger();
+		System.out.println(a);
+		System.out.print("enter the primitive root value less "+a+":");
+		BigInteger b=s.nextBigInteger();
+		System.out.println(b);
+		System.out.println("enter value of c less then "+a+":");
+		BigInteger c=s.nextBigInteger();
+		System.out.print(c);
+		BigInteger r1=b.modPow(c,a);
+		System.out.println("r1= "+r1);
+		System.out.println("enter the value of d less then "+a+":");
+		BigInteger d=s.nextBigInteger();
+		System.out.println(d);
+		BigInteger r2=b.modPow(d,a);
+		System.out.println("r2="+r2);
+		BigInteger k1=r2.modPow(c,a);
+		System.out.println("client side key is :"+k1);
+		BigInteger k2=r1.modPow(d,a);
+		System.out.println("server side key is :"+k2);
+		System.out.println("it is acceptd deffihelmen");
+	
+		
+	}
+}
+
+
+output:
+enter the prime value : 1278
+enter the primitive root value less 1278:8
+enter value of c less then 1278:30
+r1= 190
+enter the value of d less then 1278:
+4
+r2=262
+client side key is :172
+server side key is :172
+it is acceptd diffihellman  //because both client and server side keys are same vale.that's why it accepted diffie hellman key exchange method.
